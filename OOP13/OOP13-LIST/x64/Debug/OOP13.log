@@ -1,0 +1,4 @@
+﻿  Source.cpp
+C:\Users\dedma\source\repos\OOP\OOP13\OOP13\Source.cpp(55,43): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\dedma\source\repos\OOP\OOP13\OOP13\Source.cpp(112,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  OOP13.vcxproj -> C:\Users\dedma\source\repos\OOP\OOP13\x64\Debug\OOP13.exe
