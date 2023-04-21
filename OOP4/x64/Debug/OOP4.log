@@ -1,0 +1,6 @@
+﻿  Person.cpp
+  Source.cpp
+C:\Users\dedma\source\repos\OOP\OOP4\OOP4\Source.cpp(15,13): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+  Student.cpp
+  Создание кода...
+  OOP4.vcxproj -> C:\Users\dedma\source\repos\OOP\OOP4\x64\Debug\OOP4.exe

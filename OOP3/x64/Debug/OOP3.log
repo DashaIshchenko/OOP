@@ -1,0 +1,4 @@
+﻿  Source.cpp
+C:\Users\dedma\source\repos\OOP\OOP3\OOP3\Pair.h(14,28): warning C4244: return: преобразование "double" в "int", возможна потеря данных
+C:\Users\dedma\source\repos\OOP\OOP3\OOP3\Source.cpp(5,1): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+  OOP3.vcxproj -> C:\Users\dedma\source\repos\OOP\OOP3\x64\Debug\OOP3.exe
