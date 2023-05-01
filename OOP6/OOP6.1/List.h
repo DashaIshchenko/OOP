@@ -8,24 +8,24 @@ struct Node {
 };
 
 class Iterator {
-	friend class List;//äğóæåñòâåííûé êëàññ
+	friend class List;//Ã¤Ã°Ã³Ã¦Ã¥Ã±Ã²Ã¢Ã¥Ã­Ã­Ã»Ã© ÃªÃ«Ã Ã±Ã±
 	Node* elem;
 public:
-	Iterator() { elem = nullptr; }//êîíñòğóêòîğ áåç ïàğàìåòğîâ
-	Iterator(const Iterator& it) { elem = it.elem; }//êîíñòğóêòîğ êîïèğîâàíèÿ
-	//ïåğåãğóæåííûå îïåğàöèè ñğàâíåíèÿ
+	Iterator() { elem = nullptr; }//ÃªÃ®Ã­Ã±Ã²Ã°Ã³ÃªÃ²Ã®Ã° Ã¡Ã¥Ã§ Ã¯Ã Ã°Ã Ã¬Ã¥Ã²Ã°Ã®Ã¢
+	Iterator(const Iterator& it) { elem = it.elem; }//ÃªÃ®Ã­Ã±Ã²Ã°Ã³ÃªÃ²Ã®Ã° ÃªÃ®Ã¯Ã¨Ã°Ã®Ã¢Ã Ã­Ã¨Ã¿
+	//Ã¯Ã¥Ã°Ã¥Ã£Ã°Ã³Ã¦Ã¥Ã­Ã­Ã»Ã¥ Ã®Ã¯Ã¥Ã°Ã Ã¶Ã¨Ã¨ Ã±Ã°Ã Ã¢Ã­Ã¥Ã­Ã¨Ã¿
 	Iterator& operator=(const Iterator& a) {
 		elem = a.elem;
 		return *this;
 	}
 	bool operator==(const Iterator& it) { return elem == it.elem; }
 	bool operator!=(const Iterator& it) { return elem != it.elem; };
-	//ïåğåãğóæåííàÿ îïåğàöèÿ èíêğåìåíò
+	//Ã¯Ã¥Ã°Ã¥Ã£Ã°Ã³Ã¦Ã¥Ã­Ã­Ã Ã¿ Ã®Ã¯Ã¥Ã°Ã Ã¶Ã¨Ã¿ Ã¨Ã­ÃªÃ°Ã¥Ã¬Ã¥Ã­Ã²
 	Iterator& operator++() {
 		elem = elem->next;
 		return *this;
 	};
-	//ïåğåãğóæåííàÿ îïåğàöèÿ äåêğåìåíò
+	//Ã¯Ã¥Ã°Ã¥Ã£Ã°Ã³Ã¦Ã¥Ã­Ã­Ã Ã¿ Ã®Ã¯Ã¥Ã°Ã Ã¶Ã¨Ã¿ Ã¤Ã¥ÃªÃ°Ã¥Ã¬Ã¥Ã­Ã²
 	Iterator& operator--() {
 		elem = elem->prev;
 		return *this;
@@ -38,7 +38,7 @@ public:
 		for (int i = 0; i < a; i++) elem = elem->prev;
 		return *this;
 	}
-	//ïåğåãğóæåííàÿ îïåğàöèÿ ğàçûìåíîâàíèÿ
+	//Ã¯Ã¥Ã°Ã¥Ã£Ã°Ã³Ã¦Ã¥Ã­Ã­Ã Ã¿ Ã®Ã¯Ã¥Ã°Ã Ã¶Ã¨Ã¿ Ã°Ã Ã§Ã»Ã¬Ã¥Ã­Ã®Ã¢Ã Ã­Ã¨Ã¿
 	int& operator *() const { return elem->data; }
 
 };
