@@ -1,7 +1,7 @@
 #include "List.h"
 #include <iostream>
 using namespace std;
-//конструктор с параметрами
+//ГЄГ®Г­Г±ГІГ°ГіГЄГІГ®Г° Г± ГЇГ Г°Г Г¬ГҐГІГ°Г Г¬ГЁ
 List::List(int s, int k){
 	size = s;
 	Node* node = new Node;
@@ -25,7 +25,7 @@ List::List() {
 	head = nullptr;
 	tail = nullptr;
 }
-//конструктор копирования
+//ГЄГ®Г­Г±ГІГ°ГіГЄГІГ®Г° ГЄГ®ГЇГЁГ°Г®ГўГ Г­ГЁГї
 List::List(const List& a) {
 	Node* node = a.head;
 	while (node != nullptr) {
@@ -36,7 +36,7 @@ List::List(const List& a) {
 	end = a.end;
 }
 
-//деструктор
+//Г¤ГҐГ±ГІГ°ГіГЄГІГ®Г°
 List::~List() {
 	Node* curr = head;
 	while (curr != nullptr) {
@@ -109,7 +109,7 @@ void List::popfront() {
 
 bool List::empty() { return size == 0; }
 
-//операция присваивания
+//Г®ГЇГҐГ°Г Г¶ГЁГї ГЇГ°ГЁГ±ГўГ ГЁГўГ Г­ГЁГї
 List& List::operator=(const List& a) {
 	if (this == &a) return *this;
 	Node* node = head;
@@ -128,7 +128,7 @@ List& List::operator=(const List& a) {
 	end = a.end;
 	return *this;
 }
-//операция доступа по индексу
+//Г®ГЇГҐГ°Г Г¶ГЁГї Г¤Г®Г±ГІГіГЇГ  ГЇГ® ГЁГ­Г¤ГҐГЄГ±Гі
 int& List::operator[](int index) {
 	if (index < size && index >= 0) {
 		Node* curr = head;
@@ -155,7 +155,7 @@ List List::operator*(List& a) {
 
 }
 
-//операции для ввода-вывода
+//Г®ГЇГҐГ°Г Г¶ГЁГЁ Г¤Г«Гї ГўГўГ®Г¤Г -ГўГ»ГўГ®Г¤Г 
 ostream& operator<<(ostream& out, const List& a) {
 	Node* curr = a.head;
 	while (curr != nullptr) {
